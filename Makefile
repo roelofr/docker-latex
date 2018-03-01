@@ -32,6 +32,7 @@ build: build-full build-tetex build-medium build-mini build-arch
 build-full: full/Dockerfile
 	docker build \
 		--tag=roelofr/latex:full \
+		--tag=roelofr/latex:latest \
 		full/
 
 build-tetex: tetex/Dockerfile
