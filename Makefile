@@ -31,25 +31,25 @@ build: build-full build-tetex build-medium build-mini build-arch
 
 build-full: full/Dockerfile
 	docker build \
-		--tag=roelofr/texlive:full \
+		--tag=roelofr/latex:full \
 		full/
 
 build-tetex: tetex/Dockerfile
 	docker build \
-		--tag=roelofr/texlive:tetex \
+		--tag=roelofr/latex:tetex \
 		tetex/
 
 build-medium: medium/Dockerfile
 	docker build \
-		--tag=roelofr/texlive:medium \
+		--tag=roelofr/latex:medium \
 		medium/
 
 build-mini: mini/Dockerfile
 	docker build \
-		--tag=roelofr/texlive:mini \
+		--tag=roelofr/latex:mini \
 		mini/
 
 build-arch: arch/Dockerfile
 	docker build \
-		--tag=roelofr/texlive:arch \
+		--tag=roelofr/latex:arch \
 		arch/

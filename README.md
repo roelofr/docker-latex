@@ -1,19 +1,19 @@
 # Docker TexLive
 
-![Docker Automated build status](https://img.shields.io/docker/build/roelofr/texlive.svg)
-![Docker Automated build](https://img.shields.io/docker/automated/roelofr/texlive.svg)
+![Docker Automated build status](https://img.shields.io/docker/build/roelofr/latex.svg)
+![Docker Automated build](https://img.shields.io/docker/automated/roelofr/latex.svg)
 
-This project contains four setups of the TexLive project, running on Alpine.
-They're divided into a couple of groups, which are listed below.
+This project contains four setups of the TexLive project, running on Debian
+Slim.  They're divided into a couple of groups, which are listed below.
 
 ## How to use
 
 This container is best used for systemic generation of PDF files from LaTeX.
 
-To use it, install it from [Docker Hub](https://hub.docker.com/r/roelofr/texlive/), or use the command below.
+To use it, install it from [Docker Hub](https://hub.docker.com/r/roelofr/latex/), or use the command below.
 
 ```sh
-docker pull roelofr/texlive:<flavor>
+docker pull roelofr/latex:<flavor>
 ```
 
 The available flavours are listed below, along with the size taken by TexLive.
