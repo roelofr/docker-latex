@@ -1,7 +1,7 @@
-# texlive.profile written on Wed Feb 28 15:24:13 2018 UTC
+# texlive.profile written on Thu Mar 01 11:40:30 2018 UTC
 # It will NOT be updated and reflects only the
 # installation profile at installation time.
-selected_scheme scheme-custom
+selected_scheme scheme-infraonly
 TEXDIR /usr/local/texlive/2017
 TEXMFCONFIG ~/.texlive2017/texmf-config
 TEXMFHOME ~/texmf
