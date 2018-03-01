@@ -27,23 +27,29 @@ arch/Dockerfile: Dockerfile.template profiles/arch.profile
 	cp profiles/arch.profile arch/texlive.profile
 	sed 's/{{FLAVOUR}}/arch/g' Dockerfile.template > arch/Dockerfile
 
-build:
+build: build-full build-tetex build-medium build-mini build-arch
+
+build-full: full/Dockerfile
 	docker build \
 		--tag=roelofr/texlive:full \
 		full/
 
+build-tetex: tetex/Dockerfile
 	docker build \
 		--tag=roelofr/texlive:tetex \
 		tetex/
 
+build-medium: medium/Dockerfile
 	docker build \
 		--tag=roelofr/texlive:medium \
 		medium/
 
+build-mini: mini/Dockerfile
 	docker build \
 		--tag=roelofr/texlive:mini \
 		mini/
 
+build-arch: arch/Dockerfile
 	docker build \
 		--tag=roelofr/texlive:arch \
 		arch/
