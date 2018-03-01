@@ -5,11 +5,13 @@ LABEL maintainer="Roelof Roos <github@roelof.io>"
 
 RUN apt-get update -yq \
   && apt-get install -yq \
+    curl \
     git \
+    make \
     perl \
     tar \
     wget \
-    xzip \
+    zip \
   && apt-get clean -yq \
   && rm -rf /var/cache/apt/*
 
